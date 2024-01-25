@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f2f828feb.js" crossorigin="anonymous"></script>
+  </head>
+
+    <body>
+          <div class="weather-app">   
+            <h1>Weather.</h1>    
+              
+          <div class="container">    
+           
+            <div class="today forecast">    
+                <div class="today-forecast-header" id="today">
+                <div class="day" id="todayName"></div>
+                <p id="todayNumber"></p><div class=" date" id="todayMonth"></div>
+                </div> <!-- .forecast-header -->
+                <div class="today-forecast-content" id="current">
+                <div class="location" id="todayLocation"></div>    
+                <div class="degree">
+                    <div class="num" id="todayTemp"></div>
+                    <div class="forecast-icon" id="todayImg">
+                        <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="" width="100">
+                    </div>	
+                </div>    
+                    <div class="custom" id="todayCondition">Partly cloudy</div>
+                    <i class="fa-solid fa-umbrella"></i>   <span id="humidity"> 20%</span>
+                    <i class="fa-solid fa-wind"></i>   <span id="wind"> 18km/h</span>
+                    <i class="fa-solid fa-compass"></i>   <span id="windDirection"> East</span>
+                </div>
+            </div>
+            
+         
+      </div>
+
+        <div class="days">
+           <div class="panal">
+                <form action="" id="inputLocation">
+                    <input type="text" class="search" id="searchInput" placeholder="Find Your Location.." >
+                    <button type="submit" class="but-submit">Find</button>
+                </form>
+            </div>
+
+            <div class="forecast">
+                <div class="forecast-header">
+                    <div class="next-day">Wednesday</div>
+                </div> 
+                <div class="forecast-content">
+                    <div class="forecast-icon">
+                        <img class="next-condition-img" src="https://cdn.weatherapi.com/weather/64x64/day/176.png" alt="" width="48">
+                    </div>
+                    <div class="degree next-max-temp"><sup>o</sup>C</div>
+                    <small class="next-min-temp">8.1<sup>o</sup></small>
+                    <div class="custom next-condition-text">Patchy rain possible</div>
+                </div>
+                </div>
+
+                <div class="forecast">
+                    <div class="forecast-header">
+                        <div class="next-day">Thursday</div>
+                    </div> <!-- .forecast-header -->
+                    <div class="forecast-content">
+                        <div class="forecast-icon">
+                            <img class="next-condition-img" src="https://cdn.weatherapi.com/weather/64x64/day/176.png" alt="" width="48">
+                        </div>
+                        <div class="degree next-max-temp">11.1<sup>o</sup>C</div>
+                        <small class="next-min-temp">7.8<sup>o</sup></small>
+                        <div class="custom next-condition-text">Patchy rain possible</div>
+                    </div>
+                    </div>
+</div>
+          
+         
+
+
+
+          </div>
+       <script src="js/bootstrap.bundle.min.js"></script>
+       <script src="js/weather.js"></script>
+    </body>

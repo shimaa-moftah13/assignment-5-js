@@ -1,0 +1,175 @@
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.weather-app{
+    background-image: url(../images/pexels-luis-dalvan-1770815.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+.weather-app::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.331);
+
+}
+.weather-app h1{
+    color: #fff !important;
+    font-size: 25px;
+    padding: 1.8em 1em 5em 6em;
+    z-index: 10!important;
+ 
+}
+
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15em 3em 7em 9em;
+}
+.container .city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.today-forecast-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    border-bottom: 1px #ccc solid;
+}
+.location{
+    font-size: 40px;
+    font-weight: 600;
+}
+.today-forecast-content{
+    text-align: center;
+}
+.today-forecast-content .num{
+    font-size: 25px;
+    font-weight: 600;
+}
+.today .custom{
+    font-size: 19px;
+    font-weight: 400;
+    color: #e2b496;
+    margin-bottom: 10px;
+}
+.today-forecast-content span {
+    margin-right: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+.today-forecast-content span img {
+    margin-right: 5px;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.city-date .city-name{
+    margin: 0;
+    margin-bottom: 0.3em;
+    font-size: 3em;
+}
+
+.days{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: rgba(225, 225, 225, 0.18);
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid  rgba(225, 225, 225, 0.18);
+    padding: 3em 2em;
+    /* overflow-y: scroll; */
+}
+.days form{
+    margin-bottom: 3em;
+}
+.but-submit{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5em;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: #607A85;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: 0.4s;
+}
+.but-submit:hover{
+    background: #fff;
+    color: #000;
+}
+.search{
+    background: none;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    padding: 0 1em 0.5em 0;
+    width: 80%;
+    color: #fff;
+    font-size: 1.1em;
+}
+.search:focus{
+    outline: none;
+}
+.search::placeholder{
+    color: #ccc;
+}
+.days .forecast{
+    padding: 1.5em 1em 1em 0;
+    margin: 2em 0;
+    border-bottom: 1px #ccc solid;
+}
+.forecast-header{
+    background: #627c8761;
+    box-shadow: rgba(225, 225, 225, 0.18);
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid  rgba(225, 225, 225, 0.18);
+    padding: 0.5em 1em; 
+    margin-bottom: 0.7em;
+}
+.forecast-header .next-day{
+    text-align: center;
+    font-size: 1.1rem;
+}
+.forecast-content{
+    text-align: center;
+}
+.forecast-content .degree{
+    font-size: 18px;
+    margin-top: 15px;
+}
+.forecast-content small{
+    font-size: 15px;
+    
+}
+.forecast-content .custom{
+    margin-top: 15px;
+    font-size: 16px;
+    color: #e2b496;
+}
